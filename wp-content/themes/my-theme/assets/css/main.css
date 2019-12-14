@@ -1,0 +1,109 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #333;
+  font-family: 'Comic sans MS';
+}
+ /* header*/
+img.header-logo{
+    height: 50px;
+}
+
+header{
+  display: flex;
+  background-color: #0d7616;
+}
+
+nav{
+margin-left: auto;
+
+}
+
+nav li{
+  display: inline;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding-right: 40px;
+}
+/* Premiere Div */
+.plan-1{
+  background-image: url("../img/banniere.jpg");
+  background-size: cover;
+  min-height: 50rem;
+  text-align: center;
+}
+.texte1{
+  padding-top: 20rem;
+  padding-bottom: 1rem;
+  font-size: 150%;
+}
+
+.texte2{
+  font-size: 250%;
+  text-transform: uppercase;
+  color: DarkGrey;
+}
+
+.texte3{
+  text-transform: uppercase;
+  font-size: 190%;
+  padding-bottom: 30px;
+  color: green;
+}
+#bouttona{
+text-transform: uppercase;
+padding : 1rem;
+
+color: white;
+}
+.plan-1 a{
+
+  background-color: green;
+  border-radius: 30px;
+  text-decoration: none;
+}
+/* Deuxieme div */
+.plan-2{
+  min-height: 50rem;
+  text-align: center;
+  padding: 0 50rem;
+
+}
+
+.titreP2{
+  padding-top: 15rem;
+  font-size: 250%;
+  padding-bottom: 3rem;
+}
+.traitP2{
+  border-top: 1px solid #000;
+  width: 20rem;
+  margin: auto;
+}
+
+
+/* Troisième div */
+.plan-3{
+  background-image: url("../img/bandeau.jpg");
+  min-height: 25rem;
+}
+.plan-4{
+  background-color: rgb(255, 254, 241);
+}
+.colonne{
+  display: flex;
+}
+
+.columgauche{
+display: inline-block;
+}
+
+.columdroit{
+  display: inline-block;
+}
