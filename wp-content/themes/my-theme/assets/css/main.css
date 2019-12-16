@@ -59,8 +59,16 @@ nav ul li a{
 #bouttona{
 text-transform: uppercase;
 padding : 1rem;
-
 color: white;
+
+}
+
+#bouttonb{
+text-transform: uppercase;
+padding : 1rem;
+color: white;
+background-color: green;
+border-radius: 30px;
 }
 .plan-1 a{
 
@@ -93,17 +101,27 @@ color: white;
   background-image: url("../img/bandeau.jpg");
   min-height: 25rem;
 }
+/*Plan 4*/
+
 .plan-4{
   background-color: rgb(255, 254, 241);
+  text-align: center;
 }
 .colonne{
   display: flex;
+  justify-content: center;
 }
 
-.columgauche{
-display: inline-block;
+.gauche{
+padding: 1rem;
 }
 
-.columdroit{
-  display: inline-block;
+.droite{
+padding: 1rem;
+}
+
+.cat1{
+  color: green;
+  text-transform: uppercase;
+  font-size: 1.3rem;
 }

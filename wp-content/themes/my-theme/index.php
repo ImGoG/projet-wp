@@ -52,8 +52,8 @@ if ( have_posts() ) {
 <div class ="plan-4">
   <div class ="titreP4"> <?php the_field('titre_programme'); ?> </div>
   <div class="colonne">
-  <div class="columgauche">
-
+  <div class="gauche">
+<div class="cat1"><?php the_field('premiere_categorie'); ?> </div> <br />
     <?php $programs = get_field('program');
     foreach ($programs as $program){
       echo $program['hour'];
@@ -61,7 +61,8 @@ if ( have_posts() ) {
       echo "<br />";
     } ?>
 </div>
-    <div class="columdroit">
+    <div class="droite">
+      <div class="cat1"><?php the_field('deuxieme_categorie'); ?> </div> <br />
     <?php $programs2 = get_field('program2');
     foreach ($programs2 as $program2){
       echo $program2['hour2'];
@@ -72,6 +73,8 @@ if ( have_posts() ) {
   </div>
   </div>
 
+  <a href="#" id="bouttonb"><?php echo $lien_inscription['title']; ?></a>
+  </div>
   </div>
 </div>
 <?php get_footer(); ?>
