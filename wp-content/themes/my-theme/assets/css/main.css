@@ -106,6 +106,9 @@ border-radius: 30px;
 .plan-4{
   background-color: rgb(255, 254, 241);
   text-align: center;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 .colonne{
   display: flex;
@@ -125,3 +128,21 @@ padding: 1rem;
   text-transform: uppercase;
   font-size: 1.3rem;
 }
+/*Plan 5*/
+.plan-5 h1{
+  text-align: center;
+}
+
+.plan-5 p{
+  text-align: center;
+}
+.traitP5{
+  border-top: 1px solid #000;
+  width: 20rem;
+  margin: auto;
+}
+
+.plan-5 img{
+  border-radius: 80px;
+}
+.plan-5

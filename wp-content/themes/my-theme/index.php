@@ -22,10 +22,12 @@ if ( have_posts() ) {
 
     $img_fond = get_field('img_fond');
     $lien_inscription = get_field('lien_inscription');
-
+    $img_prog = get_field('img_prog');
+    
   }
 }
 ?>
+<!--Plan 1 -->
 <div class ="plan-1" style="background-image: url(<?php echo $img_fond['url']; ?>)">
 <div class ="texte1"><?php the_field('banner_baseline'); ?></div>
 <br />
@@ -35,7 +37,7 @@ if ( have_posts() ) {
 <br />
 <a href="#" id="bouttona"><?php echo $lien_inscription['title']; ?></a>
 </div>
-
+<!--Plan 2 -->
 <div class ="plan-2">
 <div class ="titreP2"><?php the_field('titre_conference'); ?></div>
 <div class ="traitP2"></div>
@@ -46,10 +48,12 @@ if ( have_posts() ) {
 </div>
 
 </div>
-
+<!--Plan 3 -->
 <div class ="plan-3">
 </div>
-<div class ="plan-4">
+
+<!--Plan 4 -->
+<div class ="plan-4" style="background-image: url(<?php echo $img_prog['url']; ?>)">
   <div class ="titreP4"> <?php the_field('titre_programme'); ?> </div>
   <div class="colonne">
   <div class="gauche">
@@ -72,9 +76,32 @@ if ( have_posts() ) {
 
   </div>
   </div>
-
   <a href="#" id="bouttonb"><?php echo $lien_inscription['title']; ?></a>
+
   </div>
-  </div>
+
+  <!--Plan 5 -->
+  <div class="plan-5">
+    <h1><?php the_field('titre_orateur');?></h1>
+    <div class="traitP5"> </div>
+    <p><?php the_field('stitre_orateur');?></p>
+      <div id="orateur">
+          <?php if(have_rows('orateur')):  ?>
+            <?php while(have_rows('orateur')): the_row(); ?>
+
+              <div>
+                <img src="<?php the_sub_field('orateur_photo');?>"/>
+                  <div class="orateurs">
+                      <span> <?php the_sub_field('orateur_desc'); ?> </span>
+                      <span> <?php the_sub_field('orateur_sdesc'); ?> </span>
+                      <div>
+                        <a href="#" class="buttonorateur"><?php echo $orateur_button['title']; ?></a>
+                      </div>
+                 </div>
+             </div>
+             <?php endwhile;  ?>
+           <?php endif; ?>
+    </div>
+</div>
 </div>
 <?php get_footer(); ?>
